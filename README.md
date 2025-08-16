@@ -246,6 +246,7 @@
 
         .phone-mockup {
             text-align: center;
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -612,249 +613,276 @@
     <section class="hero">
         <div class="color-island"></div>
         <div class="container">
-            <div class="hero-content
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quality Time App</title>
-  <style>
-    /* General Styles */
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      overflow-x: hidden;
-    }
-
-    .scroll-container {
-      height: 500vh; /* Scroll area */
-      position: relative;
-    }
-
-    .animation-section {
-      height: 100vh;
-      position: sticky;
-      top: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-    }
-
-    .circle {
-      position: absolute;
-      border-radius: 50%;
-      background-color: #D9D9D9;
-      transition: all 0.5s ease;
-    }
-
-    /* Phone Styles */
-    .phone-container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 200px;
-      height: 400px;
-      border: 2px solid #000;
-      border-radius: 30px;
-      background-color: #fff;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: all 1s ease;
-      z-index: 10;
-    }
-
-    .phone-screen {
-      width: 90%;
-      height: 90%;
-      border-radius: 20px;
-      background-color: #f0f0f0;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .color-panel {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 0%;
-      background-color: #FF69B4;
-      transition: height 1s ease;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .phone-text {
-      position: absolute;
-      width: 100%;
-      text-align: center;
-      font-size: 18px;
-      opacity: 0;
-      transition: opacity 1s ease;
-    }
-
-    .plus-icon {
-      font-size: 48px;
-      opacity: 0;
-      transition: opacity 1s ease;
-    }
-
-    .focus-text {
-      font-size: 18px;
-      margin-top: 10px;
-      opacity: 0;
-      transition: opacity 1s ease;
-    }
-
-    .qr-button {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      padding: 10px 20px;
-      background-color: #333;
-      color: #fff;
-      border-radius: 20px;
-      font-size: 14px;
-      opacity: 0;
-      transition: opacity 1s ease;
-    }
-
-    /* Hero Section */
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      height: 100vh;
-      background-color: #f9f9f9;
-      padding: 50px;
-      box-sizing: border-box;
-    }
-
-    .hero-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .hero-text h1 {
-      font-size: 48px;
-      margin: 0;
-    }
-
-    .hero-text p {
-      font-size: 20px;
-      margin: 20px 0;
-    }
-
-    .hero-text button {
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      border-radius: 25px;
-      background-color: #333;
-      color: white;
-      cursor: pointer;
-    }
-
-    .phone-mockup {
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding-top: 2rem;
-    }
-  </style>
-</head>
-<body>
-  <div class="scroll-container">
-    <div class="animation-section">
-      <div class="circle" id="circle"></div>
-      <div class="phone-container" id="phoneContainer">
-        <div class="phone-screen">
-          <div class="color-panel" id="colorPanel"></div>
-          <div class="phone-text" id="phoneText">Quality Time</div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Quality Time mit den Menschen, die dir wichtig sind</h1>
+                    <p>Echte Verbindungen entstehen, wenn wir unsere Handys weglegen und uns voll aufeinander konzentrieren.</p>
+                </div>
+                <div class="phone-mockup">
+                    <!-- Phone will be moved here -->
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Quality Time</h1>
-      <p>Fokuszeit mit deiner Familie – einfach per QR-Code teilen und Apps sperren.</p>
-      <button>Jetzt starten</button>
-    </div>
-    <div class="phone-mockup"></div>
-  </section>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="color-island"></div>
+        <div class="container">
+            <h2 class="scroll-animation">Für echte Momente gemacht</h2>
+            <div class="features-grid">
+                <div class="feature-card scroll-animation">
+                    <div class="feature-icon">📵</div>
+                    <h3>Bildschirmfreie Zeit</h3>
+                    <p>Schafft bewusste Pausen von der digitalen Welt für tiefere Gespräche und echte Aufmerksamkeit.</p>
+                </div>
+                <div class="feature-card scroll-animation">
+                    <div class="feature-icon">👥</div>
+                    <h3>Gemeinsam fokussiert</h3>
+                    <p>Ob Familie, Freunde oder Kollegen – alle sind gleichzeitig ablenkungsfrei und voll dabei.</p>
+                </div>
+                <div class="feature-card scroll-animation">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Produktive Sessions</h3>
+                    <p>Perfekt für Meetings, Brainstorming oder wichtige Gespräche ohne ständige Handy-Unterbrechungen.</p>
+                </div>
+                <div class="feature-card scroll-animation">
+                    <div class="feature-icon">💎</div>
+                    <h3>Wertvolle Momente</h3>
+                    <p>Verwandelt gewöhnliche Situationen in bedeutungsvolle, ungeteilte Aufmerksamkeit für das was zählt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script>
-    const circle = document.getElementById('circle');
-    const phoneContainer = document.getElementById('phoneContainer');
-    const colorPanel = document.getElementById('colorPanel');
-    const phoneText = document.getElementById('phoneText');
-    let hasTransitioned = false;
+    <!-- Onboarding Section -->
+    <section class="onboarding">
+        <div class="color-island"></div>
+        <div class="container">
+            <h2 class="scroll-animation">So einfach startet eine Session</h2>
+            <div class="onboarding-steps">
+                <div class="step-card scroll-animation">
+                    <div class="step-number">1</div>
+                    <h3>Session erstellen</h3>
+                    <p>Eine Person öffnet Quality Time, wählt die gewünschte Dauer und erstellt einen QR-Code für die Gruppe.</p>
+                </div>
+                <div class="step-card scroll-animation">
+                    <div class="step-number">2</div>
+                    <h3>Alle scannen mit</h3>
+                    <p>Die anderen Teilnehmer scannen den Code – egal ob Freunde, Familie oder Kollegen.</p>
+                </div>
+                <div class="step-card scroll-animation">
+                    <div class="step-number">3</div>
+                    <h3>Ablenkungen verschwinden</h3>
+                    <p>Alle störenden Apps werden automatisch blockiert. Jetzt ist Zeit für das, was wirklich wichtig ist.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    window.addEventListener('scroll', () => {
-      const scrollTop = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const docHeight = document.body.scrollHeight - windowHeight;
-      const progress = scrollTop / docHeight;
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="scroll-animation">Bereit für echte Verbindungen?</h2>
+            <p class="scroll-animation">Lade Quality Time kostenlos herunter und erlebe, wie wertvoll ungeteilte Aufmerksamkeit sein kann.</p>
+            <div class="app-buttons scroll-animation">
+                <a href="#" class="app-button">
+                    Kostenlos herunterladen
+                </a>
+            </div>
+        </div>
+    </section>
 
-      // Circle scaling
-      const scale = Math.min(1000, 200 + progress * 2000);
-      circle.style.width = `${scale}px`;
-      circle.style.height = `${scale}px`;
+    <!-- Feedback Section -->
+    <section class="feedback">
+        <div class="container">
+            <h2 class="scroll-animation">Eure Ideen sind gefragt</h2>
+            <p class="scroll-animation">Habt ihr Wünsche oder Vorschläge für neue Features? Teilt eure Ideen mit uns!</p>
+            <a href="https://forms.gle/TTVS5DNdcnTBrTqf7" class="feedback-button scroll-animation" target="_blank">Feature vorschlagen</a>
+        </div>
+    </section>
 
-      // Phone scaling
-      const phoneScale = 1 + progress * 0.5;
-      phoneContainer.style.transform = `translate(-50%, -50%) scale(${phoneScale})`;
+    <script>
+        // Phone intro text rotation
+        const phoneTexts = [
+            "Hallo, willkommen bei<br>Quality Time",
+            "Zeit für echte<br>Verbindungen mit<br>deinen Liebsten",
+            "Gemeinsame Momente<br>ohne Ablenkungen<br>schaffen",
+            "Wertvolle Zeit<br>füreinander da sein"
+        ];
 
-      // Phone text fade in
-      phoneText.style.opacity = progress;
+        let currentTextIndex = 0;
+        let hasTransitioned = false;
+        let scrollIndicatorHidden = false;
 
-      // Transition to Hero
-      if (progress > 0.85 && !hasTransitioned) {
-        hasTransitioned = true;
+        function updatePhoneText() {
+            const phoneText = document.getElementById('phoneText');
+            const phoneContainer = document.querySelector('.phone-container');
+            const colorPanel = document.querySelector('.color-panel');
+            const scrollIndicator = document.getElementById('scrollIndicator');
+            const scrolled = window.pageYOffset;
+            const phoneIntroHeight = document.querySelector('.phone-intro').offsetHeight;
+            
+            // Calculate which text should be shown based on scroll position
+            const progress = scrolled / phoneIntroHeight;
+            const textIndex = Math.min(Math.floor(progress * phoneTexts.length), phoneTexts.length - 1);
+            
+            // Hide scroll indicator permanently after first scroll
+            if (scrolled > 50 && !scrollIndicatorHidden) {
+                scrollIndicatorHidden = true;
+                scrollIndicator.classList.add('hidden');
+            }
+            
+            if (textIndex !== currentTextIndex && progress < 0.85) {
+                currentTextIndex = textIndex;
+                
+                // Fade out current text
+                phoneText.classList.add('fade-out');
+                
+                setTimeout(() => {
+                    phoneText.innerHTML = phoneTexts[currentTextIndex];
+                    phoneText.classList.remove('fade-out');
+                    phoneText.classList.add('fade-in');
+                    
+                    setTimeout(() => {
+                        phoneText.classList.remove('fade-in');
+                    }, 800);
+                }, 250);
+            }
+            
+            // Transform phone to hero position and show app interface
+            if (progress > 0.85 && !hasTransitioned) {
+                hasTransitioned = true;
+                
+                // Move phone to hero section position with smooth floating animation
+                const heroPhoneMockup = document.querySelector('.phone-mockup');
+                
+                // Start floating animation - change from fixed center to hero position
+                phoneContainer.style.position = 'fixed';
+                phoneContainer.style.left = '75%';
+                phoneContainer.style.top = '25%';
+                phoneContainer.style.transform = 'translate(-50%, -50%)';
+                phoneContainer.style.zIndex = '10';
+                
+                // After animation completes, attach to hero section
+                setTimeout(() => {
+                    phoneContainer.style.position = 'absolute';
+                    phoneContainer.style.left = '0';
+                    phoneContainer.style.top = '0';
+                    phoneContainer.style.transform = 'none';
+                    heroPhoneMockup.appendChild(phoneContainer);
+                }, 1500);
+                
+                // Transform color panel - expand height while keeping top at 0
+                setTimeout(() => {
+                    colorPanel.style.height = '70%';
+                    
+                    // Show app interface elements
+                    phoneText.innerHTML = '<div class="plus-icon" style="opacity: 1;">+</div><div class="focus-text" style="opacity: 1;">Fokuszeit erstellen</div>';
+                    
+                    // Add QR button
+                    const qrButton = document.createElement('div');
+                    qrButton.className = 'qr-button';
+                    qrButton.textContent = 'QR-Code scannen';
+                    qrButton.style.opacity = '1';
+                    document.querySelector('.phone-screen').appendChild(qrButton);
+                }, 400);
+                
+            } else if (progress <= 0.85 && hasTransitioned) {
+                // Reset if scrolling back up
+                hasTransitioned = false;
+                
+                // Move phone back to original position
+                document.body.appendChild(phoneContainer);
+                phoneContainer.style.position = 'fixed';
+                phoneContainer.style.left = '50%';
+                phoneContainer.style.top = '50%';
+                phoneContainer.style.transform = 'translate(-50%, -50%)';
+                phoneContainer.style.zIndex = '100';
+                
+                colorPanel.style.height = '65%';
+                
+                // Remove QR button if exists
+                const existingButton = document.querySelector('.qr-button');
+                if (existingButton) {
+                    existingButton.remove();
+                }
+                
+                // Reset text
+                phoneText.innerHTML = phoneTexts[currentTextIndex];
+            }
+            
+            // Control visibility based on scroll position
+            if (progress > 1.5) {
+                phoneContainer.style.opacity = '0';
+                phoneContainer.style.pointerEvents = 'none';
+            } else if (hasTransitioned) {
+                phoneContainer.style.opacity = '1';
+                phoneContainer.style.pointerEvents = 'auto';
+            } else {
+                phoneContainer.style.opacity = '1';
+                phoneContainer.style.pointerEvents = 'auto';
+            }
+        }
 
-        const heroPhoneMockup = document.querySelector('.phone-mockup');
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
-        // Handy nach rechts "fliegen lassen"
-        phoneContainer.style.position = 'fixed';
-        phoneContainer.style.left = '70%';
-        phoneContainer.style.top = '50%';
-        phoneContainer.style.transform = 'translate(-50%, -50%)';
-        phoneContainer.style.zIndex = '10';
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
 
-        setTimeout(() => {
-          // Dann richtig ins Grid einsetzen
-          phoneContainer.style.position = 'relative';
-          phoneContainer.style.left = 'unset';
-          phoneContainer.style.top = 'unset';
-          phoneContainer.style.transform = 'none';
-          phoneContainer.style.zIndex = 'auto';
-          heroPhoneMockup.appendChild(phoneContainer);
-        }, 1200);
+        // Observe all scroll animation elements
+        document.querySelectorAll('.scroll-animation, .feature-card, .step-card').forEach(el => {
+            observer.observe(el);
+        });
 
-        // Danach App-Interface anzeigen
-        setTimeout(() => {
-          colorPanel.style.height = '70%';
-          phoneText.innerHTML = '<div class="plus-icon" style="opacity: 1;">+</div><div class="focus-text" style="opacity: 1;">Fokuszeit erstellen</div>';
+        // Add staggered animation delays for feature cards
+        document.querySelectorAll('.feature-card').forEach((card, index) => {
+            card.style.transitionDelay = `${index * 0.2}s`;
+        });
 
-          const qrButton = document.createElement('div');
-          qrButton.className = 'qr-button';
-          qrButton.textContent = 'QR-Code scannen';
-          qrButton.style.opacity = '1';
-          document.querySelector('.phone-screen').appendChild(qrButton);
-        }, 400);
-      }
-    });
-  </script>
+        // Add staggered animation delays for step cards
+        document.querySelectorAll('.step-card').forEach((card, index) => {
+            card.style.transitionDelay = `${index * 0.3}s`;
+        });
+
+        // Update phone text on scroll
+        window.addEventListener('scroll', updatePhoneText);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Parallax effect for color islands
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const islands = document.querySelectorAll('.color-island');
+            islands.forEach((island, index) => {
+                const rate = scrolled * -0.5;
+                island.style.transform = `translateY(${rate}px)`;
+            });
+        });
+
+        // Initialize
+        updatePhoneText();
+    </script>
 </body>
 </html>
