@@ -10,7 +10,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         :root {
             --primary-color: #007AFF;
             --secondary-color: #5856D6;
@@ -24,7 +23,6 @@
             --dark-bg: #000000;
             --section-padding: 120px 0;
         }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
             line-height: 1.6;
@@ -32,13 +30,11 @@
             overflow-x: hidden;
             background: var(--dark-bg);
         }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 40px;
         }
-
         /* Animated Color Island */
         .color-island {
             position: absolute;
@@ -50,12 +46,10 @@
             animation: float 6s ease-in-out infinite;
             z-index: -1;
         }
-
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-20px); }
         }
-
         /* Phone Intro Section */
         .phone-intro {
             height: 500vh;
@@ -66,7 +60,6 @@
             justify-content: center;
             padding-top: 10vh;
         }
-
         .phone-container {
             position: fixed;
             top: 50%;
@@ -75,7 +68,6 @@
             z-index: 100;
             transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
-
         .phone-frame {
             width: 320px;
             height: 640px;
@@ -85,7 +77,6 @@
             position: relative;
             box-shadow: 0 20px 60px rgba(0,0,0,0.5);
         }
-
         .phone-screen {
             width: 100%;
             height: 100%;
@@ -94,7 +85,6 @@
             overflow: hidden;
             position: relative;
         }
-
         .color-panel {
             position: absolute;
             top: 0;
@@ -109,7 +99,6 @@
             transition: all 0.8s ease;
             border-radius: 0 0 23px 23px;
         }
-
         .phone-text {
             color: white;
             font-size: 1.4rem;
@@ -119,18 +108,15 @@
             opacity: 1;
             transition: all 0.6s ease;
         }
-
         .phone-text.fade-out {
             opacity: 0;
             transform: translateY(-30px);
         }
-
         .phone-text.fade-in {
             opacity: 1;
             transform: translateY(0);
             animation: slideIn 0.8s ease-out;
         }
-
         @keyframes slideIn {
             0% { 
                 opacity: 0; 
@@ -141,7 +127,6 @@
                 transform: translateY(0);
             }
         }
-
         /* Hero Phone (Phone 2) */
         .hero-phone-container {
             width: 320px;
@@ -153,7 +138,6 @@
             box-shadow: 0 20px 60px rgba(0,0,0,0.5);
             margin: 0 auto;
         }
-
         .hero-phone-screen {
             width: 100%;
             height: 100%;
@@ -162,7 +146,6 @@
             overflow: hidden;
             position: relative;
         }
-
         .hero-color-panel {
             position: absolute;
             top: 0;
@@ -177,7 +160,6 @@
             transition: all 0.8s ease;
             border-radius: 0 0 23px 23px;
         }
-
         .hero-phone-text {
             color: white;
             font-size: 1.4rem;
@@ -187,21 +169,18 @@
             opacity: 1;
             transition: all 0.5s ease;
         }
-
         .plus-icon {
             font-size: 2rem;
             margin-bottom: 0.5rem;
             opacity: 1;
             transition: all 0.5s ease;
         }
-
         .focus-text {
             font-size: 1.1rem;
             font-weight: 500;
             opacity: 1;
             transition: all 0.5s ease;
         }
-
         .qr-button {
             position: absolute;
             bottom: 12%;
@@ -220,7 +199,6 @@
             min-width: 180px;
             cursor: pointer;
         }
-
         .focus-button {
             position: absolute;
             top: 50%;
@@ -234,11 +212,9 @@
             text-align: center;
             transition: all 0.3s ease;
         }
-
         .focus-button:hover {
             transform: translate(-50%, -50%) scale(1.05);
         }
-
         .feature-text {
             color: white;
             font-size: 1.1rem;
@@ -249,7 +225,6 @@
             transition: all 0.5s ease;
             line-height: 1.4;
         }
-
         .done-button {
             position: absolute;
             top: 20px;
@@ -266,11 +241,9 @@
             opacity: 0;
             z-index: 10;
         }
-
         .done-button:hover {
             background: rgba(255, 255, 255, 0.3);
         }
-
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -280,12 +253,10 @@
             background: linear-gradient(135deg, rgba(0, 122, 255, 0.05), rgba(88, 86, 214, 0.05));
             padding: 80px 0;
         }
-
         .hero .color-island {
             right: 10%;
             top: 20%;
         }
-
         .hero-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -294,7 +265,6 @@
             width: 100%;
             position: relative;
         }
-
         .hero-text {
             z-index: 1;
             position: relative;
@@ -303,7 +273,6 @@
             border-radius: 20px;
             backdrop-filter: blur(10px);
         }
-
         .hero-text h1 {
             font-size: 4rem;
             font-weight: 700;
@@ -315,18 +284,15 @@
             background-clip: text;
             animation: textGlow 3s ease-in-out infinite alternate;
         }
-
         @keyframes textGlow {
             0% { filter: brightness(1); }
             100% { filter: brightness(1.1); }
         }
-
         .hero-text p {
             font-size: 1.5rem;
             color: var(--text-light);
             font-weight: 300;
         }
-
         .phone-mockup {
             text-align: center;
             position: relative;
@@ -336,26 +302,22 @@
             padding-top: 2rem;
             z-index: 2;
         }
-
         .phone-mockup img {
             max-width: 300px;
             height: auto;
             filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));
         }
-
         /* Features Section */
         .features {
             padding: var(--section-padding);
             position: relative;
         }
-
         .features .color-island {
             left: 5%;
             top: 30%;
             width: 300px;
             height: 200px;
         }
-
         .features h2 {
             text-align: center;
             font-size: 3rem;
@@ -363,13 +325,11 @@
             margin-bottom: 4rem;
             color: var(--text-dark);
         }
-
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 3rem;
         }
-
         .feature-card {
             background: var(--card-bg);
             padding: 3rem;
@@ -381,17 +341,14 @@
             opacity: 0;
             transform: translateY(30px);
         }
-
         .feature-card.visible {
             opacity: 1;
             transform: translateY(0);
         }
-
         .feature-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 40px rgba(0,0,0,0.4);
         }
-
         .feature-icon {
             width: 80px;
             height: 80px;
@@ -403,66 +360,59 @@
             font-size: 2rem;
             margin-bottom: 2rem;
         }
-
         .feature-card:nth-child(1) .feature-icon {
             background: var(--accent-color);
             color: white;
         }
-
         .feature-card:nth-child(2) .feature-icon {
             background: var(--primary-color);
             color: white;
         }
-
         .feature-card:nth-child(3) .feature-icon {
             background: var(--secondary-color);
             color: white;
         }
-
         .feature-card:nth-child(4) .feature-icon {
             background: var(--soft-green);
             color: white;
         }
-
         .feature-card h3 {
             font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 1rem;
         }
-
         .feature-card p {
             color: var(--text-light);
             font-size: 1.1rem;
         }
-
         /* Onboarding Section */
         .onboarding {
             padding: var(--section-padding);
             background: linear-gradient(135deg, rgba(88, 86, 214, 0.05), rgba(52, 199, 89, 0.05));
             position: relative;
         }
-
         .onboarding .color-island {
             right: 15%;
             top: 10%;
             width: 350px;
             height: 250px;
         }
-
         .onboarding h2 {
             text-align: center;
             font-size: 3rem;
             font-weight: 600;
             margin-bottom: 3rem;
         }
-
         .onboarding-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
             margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
-
         .step-card {
             background: var(--card-bg);
             padding: 2.5rem;
@@ -472,18 +422,33 @@
             transition: transform 0.3s ease, opacity 0.6s ease;
             opacity: 0;
             transform: translateY(20px);
+            max-width: 400px;
+            width: 100%;
+            position: relative;
         }
-
+        
+        .step-card:nth-child(1) {
+            align-self: flex-start;
+            margin-left: 10%;
+        }
+        
+        .step-card:nth-child(2) {
+            align-self: flex-end;
+            margin-right: 10%;
+        }
+        
+        .step-card:nth-child(3) {
+            align-self: flex-start;
+            margin-left: 5%;
+        }
         .step-card.visible {
             opacity: 1;
             transform: translateY(0);
         }
-
         .step-card:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 25px rgba(0,0,0,0.35);
         }
-
         .step-number {
             display: inline-block;
             width: 40px;
@@ -496,16 +461,13 @@
             font-weight: 600;
             margin-bottom: 1.5rem;
         }
-
         .step-card h3 {
             font-size: 1.3rem;
             margin-bottom: 1rem;
         }
-
         .step-card p {
             color: var(--text-light);
         }
-
         .name-input-demo {
             text-align: center;
             padding: 2rem;
@@ -515,7 +477,6 @@
             border: 0.5px solid rgba(142, 142, 147, 0.1);
             margin-top: 2rem;
         }
-
         .demo-input {
             padding: 1rem 1.5rem;
             border: 1px solid rgba(142, 142, 147, 0.3);
@@ -527,38 +488,33 @@
             color: var(--text-dark);
             transition: border-color 0.3s ease;
         }
-
         .demo-input:focus {
             outline: none;
             border-color: var(--primary-color);
         }
-
         /* CTA Section */
         .cta {
             padding: var(--section-padding);
             text-align: center;
             background: var(--white);
         }
-
         .cta h2 {
             font-size: 3rem;
             font-weight: 600;
             margin-bottom: 2rem;
         }
-
         .cta p {
             font-size: 1.3rem;
             color: var(--text-light);
             margin-bottom: 3rem;
         }
-
         .app-buttons {
             display: flex;
             justify-content: center;
             gap: 2rem;
             flex-wrap: wrap;
+            margin-bottom: 3rem;
         }
-
         .app-button {
             display: inline-block;
             padding: 1rem 2.5rem;
@@ -570,30 +526,50 @@
             font-size: 1.1rem;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
         .app-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         }
-
+        
+        /* Support buttons */
+        .support-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .support-button {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            background: var(--card-bg);
+            color: var(--text-dark);
+            text-decoration: none;
+            border-radius: 12px;
+            border: 1px solid rgba(142, 142, 147, 0.3);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        .support-button:hover {
+            background: rgba(142, 142, 147, 0.1);
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
         /* Feedback Section */
         .feedback {
             padding: 80px 0;
             background: linear-gradient(135deg, rgba(0, 122, 255, 0.05), rgba(88, 86, 214, 0.05));
             text-align: center;
         }
-
         .feedback h2 {
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
         }
-
         .feedback p {
             font-size: 1.2rem;
             color: var(--text-light);
             margin-bottom: 2rem;
         }
-
         .feedback-button {
             display: inline-block;
             padding: 1rem 2rem;
@@ -605,77 +581,375 @@
             font-weight: 500;
             transition: all 0.3s ease;
         }
-
         .feedback-button:hover {
             background: var(--primary-color);
             color: white;
         }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
+        
+        /* Enhanced Mobile Optimizations */
+        @media (max-width: 480px) {
             .container {
-                padding: 0 20px;
+                padding: 0 15px;
             }
-
+            
+            /* Phone intro optimizations */
+            .phone-intro {
+                height: 300vh; /* Reduced height for mobile */
+            }
+            
+            .phone-frame, .hero-phone-container {
+                width: 250px;
+                height: 500px;
+            }
+            
+            .phone-text, .hero-phone-text {
+                font-size: 1rem;
+                padding: 1.5rem;
+                line-height: 1.4;
+            }
+            
+            .plus-icon {
+                font-size: 1.5rem;
+                margin-bottom: 0.3rem;
+            }
+            
+            .focus-text {
+                font-size: 0.9rem;
+            }
+            
+            .qr-button {
+                padding: 12px 24px;
+                font-size: 0.9rem;
+                min-width: 150px;
+            }
+            
+            /* Hero section mobile */
+            .hero {
+                min-height: 80vh;
+                padding: 40px 0;
+            }
+            
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+            
+            .hero-text {
+                padding: 1.5rem;
+                margin: 0;
+                order: 2;
+            }
+            
+            .hero-text h1 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+                line-height: 1.2;
+            }
+            
+            .hero-text p {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            
+            .phone-mockup {
+                order: 1;
+                padding-top: 1rem;
+            }
+            
+            /* Features mobile */
+            .features {
+                padding: 60px 0;
+            }
+            
+            .features h2 {
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .feature-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .feature-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+            
+            .feature-card h3 {
+                font-size: 1.2rem;
+                margin-bottom: 0.8rem;
+            }
+            
+            .feature-card p {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            
+            /* Onboarding mobile */
+            .onboarding {
+                padding: 60px 0;
+            }
+            
+            .onboarding h2 {
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+            }
+            
+            .onboarding-steps {
+                gap: 2rem;
+            }
+            
+            .step-card {
+                max-width: none;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                align-self: center !important;
+            }
+            
+            .support-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            .step-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .step-number {
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+            }
+            
+            .step-card h3 {
+                font-size: 1.1rem;
+                margin-bottom: 0.8rem;
+            }
+            
+            .step-card p {
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+            
+            /* CTA mobile */
+            .cta {
+                padding: 60px 0;
+            }
+            
+            .cta h2 {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+                line-height: 1.2;
+            }
+            
+            .cta p {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+                line-height: 1.5;
+            }
+            
+            .app-button {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            /* Feedback mobile */
+            .feedback {
+                padding: 60px 0;
+            }
+            
+            .feedback h2 {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+            
+            .feedback p {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+                line-height: 1.5;
+            }
+            
+            .feedback-button {
+                padding: 1rem 1.5rem;
+                font-size: 1rem;
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .support-button {
+                padding: 0.8rem 1.2rem;
+                font-size: 0.9rem;
+                width: 100%;
+                max-width: 280px;
+                text-align: center;
+            }
+            
+            /* Color islands mobile */
+            .color-island {
+                width: 200px;
+                height: 150px;
+                opacity: 0.2;
+            }
+            
+            /* Demo input mobile */
+            .demo-input {
+                min-width: auto;
+                width: 100%;
+                max-width: 280px;
+                font-size: 1rem;
+                padding: 0.8rem 1rem;
+            }
+            
+            /* Touch optimization */
+            .focus-button, .qr-button, .done-button, .app-button, .feedback-button {
+                min-height: 44px; /* iOS recommended touch target */
+            }
+        }
+        
+        @media (max-width: 768px) and (min-width: 481px) {
+            .container {
+                padding: 0 25px;
+            }
+            
             .phone-frame, .hero-phone-container {
                 width: 280px;
                 height: 560px;
             }
-
+            
             .phone-text, .hero-phone-text {
                 font-size: 1.2rem;
+                padding: 1.8rem;
             }
-
+            
             .hero-content {
                 grid-template-columns: 1fr;
                 gap: 3rem;
                 text-align: center;
             }
-
-            .hero-text {
-                padding: 1.5rem;
-                margin: 0 1rem;
-            }
-
+            
             .hero-text h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
+                line-height: 1.1;
             }
-
+            
             .hero-text p {
                 font-size: 1.2rem;
             }
-
+            
             .features h2,
             .onboarding h2,
             .cta h2 {
                 font-size: 2.2rem;
             }
-
+            
+            .features-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 2rem;
+            }
+            
+            .step-card {
+                max-width: none;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                align-self: center !important;
+            }
+            
             .color-island {
                 width: 250px;
                 height: 180px;
             }
-
-            .app-buttons {
-                flex-direction: column;
-                align-items: center;
+        }
+        
+        /* Large tablet optimization */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .hero-content {
+                gap: 4rem;
             }
-
-            .app-button img {
-                height: 45px;
+            
+            .hero-text h1 {
+                font-size: 3.2rem;
+            }
+            
+            .hero-text p {
+                font-size: 1.3rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2.5rem;
+            }
+            
+            .step-card {
+                max-width: none;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                align-self: center !important;
             }
         }
-
+        
+        /* Landscape phone optimization */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .phone-intro {
+                height: 200vh;
+            }
+            
+            .hero {
+                min-height: 70vh;
+                padding: 30px 0;
+            }
+            
+            .hero-text h1 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            
+            .hero-text p {
+                font-size: 1rem;
+            }
+            
+            .features,
+            .onboarding,
+            .cta {
+                padding: 40px 0;
+            }
+        }
+        
         /* Smooth scrolling animations */
         .scroll-animation {
             opacity: 0;
             transform: translateY(30px);
             transition: all 0.8s ease;
         }
-
         .scroll-animation.visible {
             opacity: 1;
             transform: translateY(0);
+        }
+        
+        /* Performance optimizations for mobile */
+        @media (max-width: 768px) {
+            .color-island {
+                animation-duration: 8s; /* Slower animation on mobile for better performance */
+            }
+            
+            /* Reduce parallax effect on mobile for better performance */
+            .hero .color-island,
+            .features .color-island,
+            .onboarding .color-island {
+                transform: none !important;
+            }
         }
     </style>
 </head>
@@ -694,7 +968,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Hero Section -->
     <section class="hero">
         <div class="color-island"></div>
@@ -728,7 +1002,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Features Section -->
     <section class="features">
         <div class="color-island"></div>
@@ -758,7 +1032,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Onboarding Section -->
     <section class="onboarding">
         <div class="color-island"></div>
@@ -783,20 +1057,24 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Call to Action Section -->
     <section class="cta">
         <div class="container">
             <h2 class="scroll-animation">Bereit für echte Verbindungen?</h2>
-            <p class="scroll-animation">Lade Quality Time kostenlos herunter und erlebe, wie wertvoll ungeteilte Aufmerksamkeit sein kann.</p>
+            <p class="scroll-animation">Lade Quality Time kostenlos im Apple App Store herunter und erlebe, wie wertvoll ungeteilte Aufmerksamkeit sein kann.</p>
             <div class="app-buttons scroll-animation">
                 <a href="#" class="app-button">
                     Kostenlos herunterladen
                 </a>
             </div>
+            <div class="support-buttons scroll-animation">
+                <a href="https://forms.gle/iQgfn7wngMr4Trc96" class="support-button" target="_blank">Allgemeine Fragen/Support</a>
+                <a href="https://forms.gle/1HAgYpgJcQ5BJDz77" class="support-button" target="_blank">Fragen zum Datenschutz</a>
+            </div>
         </div>
     </section>
-
+    
     <!-- Feedback Section -->
     <section class="feedback">
         <div class="container">
@@ -805,7 +1083,7 @@
             <a href="https://forms.gle/TTVS5DNdcnTBrTqf7" class="feedback-button scroll-animation" target="_blank">Feature vorschlagen</a>
         </div>
     </section>
-
+    
     <script>
         // Phone 1 (Intro) - text rotation with improved timing and fade-out
         const phoneTexts = [
@@ -814,10 +1092,9 @@
             "Gemeinsame Momente<br>ohne Ablenkungen<br>schaffen",
             "Wertvolle Zeit für<br>echte Begegnungen<br>und tiefe Gespräche"
         ];
-
         let currentTextIndex = 0;
         let isTransitioning = false;
-
+        
         function updatePhone1Text() {
             const phoneText = document.getElementById('phoneText1');
             const phoneContainer = document.getElementById('phone1');
@@ -853,11 +1130,14 @@
                 }, 300);
             }
             
-            // Fade out phone completely when we reach the end (progress > 0.9)
-            if (progress > 0.9) {
-                phoneContainer.style.opacity = '0';
-                phoneContainer.style.transform = 'translate(-50%, -50%) scale(0.8)';
-                phoneContainer.style.pointerEvents = 'none';
+            // Fade out phone completely when we reach the end (progress > 0.7) - faster fade out
+            if (progress > 0.7) {
+                const fadeProgress = (progress - 0.7) / 0.3; // 0 to 1 over the last 30%
+                phoneContainer.style.opacity = (1 - fadeProgress).toString();
+                phoneContainer.style.transform = `translate(-50%, -50%) scale(${1 - fadeProgress * 0.3})`;
+                if (fadeProgress >= 1) {
+                    phoneContainer.style.pointerEvents = 'none';
+                }
             } else {
                 // Keep phone visible during the intro section
                 const opacity = Math.max(0, 1 - (progress * 0.1)); // Slight fade as we progress
@@ -866,7 +1146,7 @@
                 phoneContainer.style.pointerEvents = 'auto';
             }
         }
-
+        
         // Phone 2 (Hero) - interactive functions
         function showFocusMode() {
             const colorPanel = document.querySelector('.hero-color-panel');
@@ -892,7 +1172,7 @@
                 </div>
             `;
         }
-
+        
         function showQRMode() {
             const colorPanel = document.querySelector('.hero-color-panel');
             const phoneText = document.getElementById('phoneText2');
@@ -916,7 +1196,7 @@
                 </div>
             `;
         }
-
+        
         function resetHeroPhone() {
             const colorPanel = document.querySelector('.hero-color-panel');
             const phoneText = document.getElementById('phoneText2');
@@ -942,13 +1222,13 @@
                 </button>
             `;
         }
-
+        
         // Scroll animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
-
+        
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -956,22 +1236,22 @@
                 }
             });
         }, observerOptions);
-
+        
         // Observe all scroll animation elements
         document.querySelectorAll('.scroll-animation, .feature-card, .step-card').forEach(el => {
             observer.observe(el);
         });
-
+        
         // Add staggered animation delays for feature cards
         document.querySelectorAll('.feature-card').forEach((card, index) => {
             card.style.transitionDelay = `${index * 0.2}s`;
         });
-
+        
         // Add staggered animation delays for step cards
         document.querySelectorAll('.step-card').forEach((card, index) => {
             card.style.transitionDelay = `${index * 0.3}s`;
         });
-
+        
         // Update phone 1 text on scroll with throttling for better performance
         let ticking = false;
         function requestTick() {
@@ -980,12 +1260,26 @@
                 ticking = true;
             }
         }
-
+        
+        // Optimized scroll handler for mobile
+        let scrollTimeout;
         window.addEventListener('scroll', () => {
+            if (scrollTimeout) {
+                clearTimeout(scrollTimeout);
+            }
+            
             requestTick();
             ticking = false;
-        });
-
+            
+            // Reduced scroll frequency on mobile for better performance
+            const isMobile = window.innerWidth <= 768;
+            if (isMobile) {
+                scrollTimeout = setTimeout(() => {
+                    // Additional mobile optimizations can go here
+                }, 100);
+            }
+        }, { passive: true }); // Passive listener for better performance
+        
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -999,19 +1293,60 @@
                 }
             });
         });
-
-        // Parallax effect for color islands
+        
+        // Optimized parallax effect for color islands (disabled on mobile for performance)
         window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const islands = document.querySelectorAll('.color-island');
-            islands.forEach((island, index) => {
-                const rate = scrolled * -0.5;
-                island.style.transform = `translateY(${rate}px)`;
+            if (window.innerWidth > 768) { // Only run on desktop
+                const scrolled = window.pageYOffset;
+                const islands = document.querySelectorAll('.color-island');
+                islands.forEach((island, index) => {
+                    const rate = scrolled * -0.5;
+                    island.style.transform = `translateY(${rate}px)`;
+                });
+            }
+        }, { passive: true });
+        
+        // Touch optimization for mobile
+        if ('ontouchstart' in window) {
+            // Add touch-friendly classes
+            document.body.classList.add('touch-device');
+            
+            // Improve touch responsiveness
+            document.querySelectorAll('.focus-button, .qr-button, .done-button, .app-button, .feedback-button, .support-button').forEach(button => {
+                button.addEventListener('touchstart', function() {
+                    this.style.transform += ' scale(0.95)';
+                }, { passive: true });
+                
+                button.addEventListener('touchend', function() {
+                    setTimeout(() => {
+                        this.style.transform = this.style.transform.replace(' scale(0.95)', '');
+                    }, 100);
+                }, { passive: true });
             });
-        });
-
+        }
+        
+        // Viewport height fix for mobile browsers
+        function setVHProperty() {
+            const vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+        
+        setVHProperty();
+        window.addEventListener('resize', setVHProperty);
+        window.addEventListener('orientationchange', setVHProperty);
+        
         // Initialize
         updatePhone1Text();
+        
+        // Prevent zoom on double tap for iOS
+        let lastTouchEnd = 0;
+        document.addEventListener('touchend', function (event) {
+            const now = (new Date()).getTime();
+            if (now - lastTouchEnd <= 300) {
+                event.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, false);
     </script>
 </body>
 </html>
